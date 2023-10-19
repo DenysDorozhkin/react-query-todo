@@ -1,0 +1,48 @@
+@import "_null";
+
+@import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap"); // font-family: 'Fuggles', cursive;
+
+//VARIABLES
+$fontSize: 16px;
+$fontFamily: "Fuggles", cursive;
+// $minWidth: 320px;
+// $maxWidth: 1400px;
+$maxWidthContainer: 1370px;
+// $md1: $maxWidthContainer + 12px;
+// $md2: 991.98px;
+// $md3: 767.98px;
+// $md4: 479.98px;
+
+:root {
+  --darkColor: #1c1c1c;
+  --lightColor: #ededed;
+  --greenColor: rgb(97, 233, 66);
+  --redColor: rgb(233, 66, 66);
+}
+//VARIABLES
+
+body {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+
+  font-size: $fontSize;
+  font-family: $fontFamily;
+
+  background: var(--darkColor);
+  color: var(--lightColor);
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+._container {
+  max-width: $maxWidthContainer;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
